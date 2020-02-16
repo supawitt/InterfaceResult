@@ -1,0 +1,15 @@
+04/11/2019 17:34:36: 
+04/11/2019 17:44:28: Start running
+04/11/2019 17:44:30: Have result data: D:\Source Code\SVN\I-NET\InterfaceRsult\bin\Debug\ResultDatas\247.HL7
+04/11/2019 17:44:30: HL7(New order) are
+MSH|^~\&|LIS|NEXIT|HIS|BMS-HOSxP|20191004160842||ORU^R01|HIS01|P|2.3
+PID|1||0000001||ระบบ^ทดสอบ^^นางสาว^นางสาว||M|19760901||2028-9|^^
+ORC|NW|247|247||||||20190928094821|||||||||
+OBR|1|247|247|c152^VDRL^^^^|R|20190928094821||||||||||||014
+OBX|1|ST|212^VDRL||Non reactive||Non reactive||||F|||20190928131508| |^
+
+04/11/2019 17:44:30: Update Reqsult Data
+04/11/2019 17:44:33: Delete Reqsult Data
+
+04/11/2019 19:50:39: Start running
+04/11/2019 19:50:41: Have result data: ...
