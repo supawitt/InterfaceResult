@@ -181,6 +181,7 @@ namespace InterfaceResult
             #endregion
 
             #region Process Save Result
+            Console.WriteLine("cvcv");
             #endregion
 
             #region Process Delet Result
