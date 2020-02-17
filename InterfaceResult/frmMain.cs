@@ -27,6 +27,7 @@ namespace InterfaceResult
         private string _logupdate = null;
         private string _logdelete = null;
         private string[] labresultfiles = null;
+        private string labresultdata = null; 
         #endregion
 
         #region Operations
@@ -217,7 +218,11 @@ namespace InterfaceResult
             #endregion
 
             #region Process Save Log, Display Data
-            
+            Writelogfile();
+            var streamlabresult = new FileStream(labresultfiles[0], FileMode.Open, FileAccess.Read);
+            using var labresult = new StreamReader(streamlabresult, Encoding.Default);
+            labresultdata = labresult.ReadToEnd();
+            txtActive.Text = labresultdata;
             #endregion
 
             #region Process Check Stop
@@ -252,12 +257,11 @@ namespace InterfaceResult
         public void Writelogfile()
         {
             Directory.CreateDirectory(connectDB.INI_path + @"\Event_Log");
-
             FileStream create = File.Open(connectDB.INI_path + @"\Event_Log\LabResult_log.log", FileMode.Append);
             using StreamWriter newtask = new StreamWriter(create);
             newtask.WriteLine(_logstart + @"  Start Running !!");
             newtask.WriteLine(_logcheckresult + @" Have Result Data : " + labresultfiles[0]);
-            newtask.WriteLine(_logcheckresult + @" HL7(New order) are = "+"\n+" + labreqid);
+            newtask.WriteLine(_logcheckresult + @" HL7(New order) are = "+"\n+" + labresultdata);
             newtask.WriteLine(_logupdate + @"Update Reqsult Data");
             newtask.WriteLine(_logupdate + @"Delete Reqsult Data");
             newtask.WriteLine("\n\n");

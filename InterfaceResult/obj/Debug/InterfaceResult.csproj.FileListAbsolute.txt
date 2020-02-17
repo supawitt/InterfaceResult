@@ -19,3 +19,15 @@ C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\obj\Debug\
 C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\bin\Debug\InterfaceResult.exe.config
 C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\bin\Debug\MySql.Data.dll
 C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\obj\Debug\InterfaceResult.csproj.CopyComplete
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\obj\Debug\InterfaceResult.csprojAssemblyReference.cache
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\obj\Debug\InterfaceResult.frmMain.resources
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\obj\Debug\InterfaceResult.frmSetting.resources
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\obj\Debug\InterfaceResult.Properties.Resources.resources
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\obj\Debug\InterfaceResult.csproj.GenerateResource.cache
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\obj\Debug\InterfaceResult.exe
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\obj\Debug\InterfaceResult.pdb
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\bin\Debug\InterfaceResult.exe.config
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\bin\Debug\InterfaceResult.exe
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\bin\Debug\InterfaceResult.pdb
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\bin\Debug\MySql.Data.dll
+C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\obj\Debug\InterfaceResult.csproj.CopyComplete
