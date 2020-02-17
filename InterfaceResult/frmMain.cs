@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 using InterfaceRequest.conndb;
+using MySql.Data.MySqlClient;
 
 namespace InterfaceResult
 {
@@ -20,6 +21,12 @@ namespace InterfaceResult
         private bool isStop = false;
         private readonly Stopwatch watch = new Stopwatch();
         public List<string> datalist = new List<string>();
+
+        private string _logstart = null;
+        private string _logcheckresult = null;
+        private string _logupdate = null;
+        private string _logdelete = null;
+        private string[] labresultfiles = null;
         #endregion
 
         #region Operations
@@ -156,38 +163,61 @@ namespace InterfaceResult
             lblServerValue.ForeColor = Color.Green;
 
             #region Process Select Result
-            string[] labresultfiles = Directory.GetFiles(connectDB.INI_path, "*.HL7", SearchOption.TopDirectoryOnly);
+            _logstart = GetTimestamp(DateTime.Now);
+            labresultfiles = Directory.GetFiles(connectDB.INI_path, "*.HL7", SearchOption.TopDirectoryOnly);
             #endregion
 
             #region Process Check Result
-            try
+            if (!File.Exists(labresultfiles[0]))
             {
-                if (labresultfiles != null)
-                {
-                    using var data = new StreamReader(labresultfiles[0]);
-                    string labdata;
-                    while ((labdata = data.ReadLine()) != null)
-                    {
-                        datalist.Add(labdata);
-                    }
-                    string newLine = Environment.NewLine;
-                    txtActive.Text = datalist[0] + newLine + datalist[1] + newLine + datalist[2] + newLine + datalist[3];
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                btnStart_Click(sender, e);
             }
             #endregion
 
             #region Process Save Result
-            Console.WriteLine("cvcv");
+            else
+            {
+                _logcheckresult = GetTimestamp(DateTime.Now);
+                var filestream = new FileStream(labresultfiles[0], FileMode.Open, FileAccess.Read);
+                using var data = new StreamReader(filestream, Encoding.Default);
+                string labdata;
+                while ((labdata = data.ReadLine()) != null)
+                {
+                    datalist.Add(labdata);
+                }
+
+                string[] msg_type = datalist[1].Split('|');
+                string[] result_lon = datalist[7].Split('|');
+
+
+                DateTime time = DateTime.Now;
+                MySqlCommand cmd;
+                connectDB.Getconnstring();
+                var sql = @"insert into lab_result (lab_result_lon,lab_result_msg_type,lab_result_data,lab_result_datatype_id,lab_result_note,lab_result_datetime,lab_result_receive,lab_result_receive_datetime,lab_result_receive_data) values (@lab_result_lon,@lab_result_msg_type,@lab_result_data,@lab_result_datatype_id,@lab_result_note,@lab_result_datetime,@lab_result_receive,@lab_result_receive_datetime,@lab_result_receive_data)";
+                cmd = new MySqlCommand(sql, connectDB.con);
+                connectDB.con.Open();
+                cmd.Parameters.AddWithValue("@lab_result_lon", result_lon[2]);
+                cmd.Parameters.AddWithValue("@lab_result_msg_type", msg_type[8]);
+                cmd.Parameters.AddWithValue("@lab_result_data", null);
+                cmd.Parameters.AddWithValue("@lab_result_datatype_id", 1);
+                cmd.Parameters.AddWithValue("@lab_result_note", null);
+                cmd.Parameters.AddWithValue("@lab_result_datetime", time);
+                cmd.Parameters.AddWithValue("@lab_result_receive", 'N');
+                cmd.Parameters.AddWithValue("@lab_result_receive_datetime", time);
+                cmd.Parameters.AddWithValue("@lab_result_receive_data", null);
+                cmd.ExecuteNonQuery();
+                _logupdate = GetTimestamp(DateTime.Now);
+                connectDB.con.Close();
+            }
             #endregion
 
             #region Process Delet Result
+            File.Delete(labresultfiles[0]);
+            _logdelete = GetTimestamp(DateTime.Now);
             #endregion
 
             #region Process Save Log, Display Data
+            
             #endregion
 
             #region Process Check Stop
@@ -214,6 +244,23 @@ namespace InterfaceResult
         private void stopwatch_Tick_1(object sender, EventArgs e)
         {
             lblrunningtime.Text = string.Format("{0:00}:{1:00}:{2:00}", watch.Elapsed.Hours, watch.Elapsed.Minutes, watch.Elapsed.Seconds);
+        }
+        public static String GetTimestamp(DateTime value)
+        {
+            return value.ToString("dd/MM/yyyy hh:mm:ss");
+        }
+        public void Writelogfile()
+        {
+            Directory.CreateDirectory(connectDB.INI_path + @"\Event_Log");
+
+            FileStream create = File.Open(connectDB.INI_path + @"\Event_Log\LabResult_log.log", FileMode.Append);
+            using StreamWriter newtask = new StreamWriter(create);
+            newtask.WriteLine(_logstart + @"  Start Running !!");
+            newtask.WriteLine(_logcheckresult + @" Have Result Data : " + labresultfiles[0]);
+            newtask.WriteLine(_logcheckresult + @" HL7(New order) are = "+"\n+" + labreqid);
+            newtask.WriteLine(_logupdate + @"Update Reqsult Data");
+            newtask.WriteLine(_logupdate + @"Delete Reqsult Data");
+            newtask.WriteLine("\n\n");
         }
     }
 }
