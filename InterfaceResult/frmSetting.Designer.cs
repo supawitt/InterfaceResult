@@ -1,6 +1,6 @@
 ﻿namespace InterfaceResult
 {
-    partial class frmSetting
+    partial class FrmSetting
     {
         /// <summary>
         /// Required designer variable.
@@ -60,10 +60,10 @@
             this.gbxResultDataSource.Controls.Add(this.tbResultDataSourcePath);
             this.gbxResultDataSource.Controls.Add(this.lilResultDataSourceStatus);
             this.gbxResultDataSource.Controls.Add(this.lblResultDataSourceStatusValue);
-            this.gbxResultDataSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxResultDataSource.Location = new System.Drawing.Point(23, 11);
+            this.gbxResultDataSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.gbxResultDataSource.Location = new System.Drawing.Point(27, 13);
             this.gbxResultDataSource.Name = "gbxResultDataSource";
-            this.gbxResultDataSource.Size = new System.Drawing.Size(439, 102);
+            this.gbxResultDataSource.Size = new System.Drawing.Size(512, 118);
             this.gbxResultDataSource.TabIndex = 94;
             this.gbxResultDataSource.TabStop = false;
             this.gbxResultDataSource.Text = "Result Datasource";
@@ -72,9 +72,9 @@
             // 
             this.lblResultDataSourcePath.AutoSize = true;
             this.lblResultDataSourcePath.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultDataSourcePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultDataSourcePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblResultDataSourcePath.ForeColor = System.Drawing.Color.Black;
-            this.lblResultDataSourcePath.Location = new System.Drawing.Point(18, 29);
+            this.lblResultDataSourcePath.Location = new System.Drawing.Point(21, 33);
             this.lblResultDataSourcePath.Name = "lblResultDataSourcePath";
             this.lblResultDataSourcePath.Size = new System.Drawing.Size(41, 16);
             this.lblResultDataSourcePath.TabIndex = 66;
@@ -84,9 +84,9 @@
             // 
             this.lblResultDataSourceStatus.AutoSize = true;
             this.lblResultDataSourceStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultDataSourceStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultDataSourceStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblResultDataSourceStatus.ForeColor = System.Drawing.Color.Black;
-            this.lblResultDataSourceStatus.Location = new System.Drawing.Point(18, 64);
+            this.lblResultDataSourceStatus.Location = new System.Drawing.Point(21, 74);
             this.lblResultDataSourceStatus.Name = "lblResultDataSourceStatus";
             this.lblResultDataSourceStatus.Size = new System.Drawing.Size(51, 16);
             this.lblResultDataSourceStatus.TabIndex = 68;
@@ -95,16 +95,16 @@
             // tbResultDataSourcePath
             // 
             this.tbResultDataSourcePath.BackColor = System.Drawing.SystemColors.Window;
-            this.tbResultDataSourcePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbResultDataSourcePath.Location = new System.Drawing.Point(100, 26);
+            this.tbResultDataSourcePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.tbResultDataSourcePath.Location = new System.Drawing.Point(117, 30);
             this.tbResultDataSourcePath.Name = "tbResultDataSourcePath";
-            this.tbResultDataSourcePath.Size = new System.Drawing.Size(321, 22);
+            this.tbResultDataSourcePath.Size = new System.Drawing.Size(374, 22);
             this.tbResultDataSourcePath.TabIndex = 76;
             // 
             // lilResultDataSourceStatus
             // 
             this.lilResultDataSourceStatus.AutoSize = true;
-            this.lilResultDataSourceStatus.Location = new System.Drawing.Point(97, 64);
+            this.lilResultDataSourceStatus.Location = new System.Drawing.Point(113, 74);
             this.lilResultDataSourceStatus.Name = "lilResultDataSourceStatus";
             this.lilResultDataSourceStatus.Size = new System.Drawing.Size(46, 16);
             this.lilResultDataSourceStatus.TabIndex = 72;
@@ -116,9 +116,9 @@
             // 
             this.lblResultDataSourceStatusValue.AutoSize = true;
             this.lblResultDataSourceStatusValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblResultDataSourceStatusValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultDataSourceStatusValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblResultDataSourceStatusValue.ForeColor = System.Drawing.Color.Black;
-            this.lblResultDataSourceStatusValue.Location = new System.Drawing.Point(145, 64);
+            this.lblResultDataSourceStatusValue.Location = new System.Drawing.Point(169, 74);
             this.lblResultDataSourceStatusValue.Name = "lblResultDataSourceStatusValue";
             this.lblResultDataSourceStatusValue.Size = new System.Drawing.Size(134, 16);
             this.lblResultDataSourceStatusValue.TabIndex = 75;
@@ -127,38 +127,38 @@
             // tbMySqlDataSourceHostName
             // 
             this.tbMySqlDataSourceHostName.BackColor = System.Drawing.SystemColors.Window;
-            this.tbMySqlDataSourceHostName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMySqlDataSourceHostName.Location = new System.Drawing.Point(100, 23);
+            this.tbMySqlDataSourceHostName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.tbMySqlDataSourceHostName.Location = new System.Drawing.Point(117, 27);
             this.tbMySqlDataSourceHostName.Name = "tbMySqlDataSourceHostName";
-            this.tbMySqlDataSourceHostName.Size = new System.Drawing.Size(321, 22);
+            this.tbMySqlDataSourceHostName.Size = new System.Drawing.Size(374, 22);
             this.tbMySqlDataSourceHostName.TabIndex = 80;
             // 
             // tbMySqlDataSourceDatabaseName
             // 
             this.tbMySqlDataSourceDatabaseName.BackColor = System.Drawing.SystemColors.Window;
-            this.tbMySqlDataSourceDatabaseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMySqlDataSourceDatabaseName.Location = new System.Drawing.Point(100, 55);
+            this.tbMySqlDataSourceDatabaseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.tbMySqlDataSourceDatabaseName.Location = new System.Drawing.Point(117, 63);
             this.tbMySqlDataSourceDatabaseName.Name = "tbMySqlDataSourceDatabaseName";
-            this.tbMySqlDataSourceDatabaseName.Size = new System.Drawing.Size(321, 22);
+            this.tbMySqlDataSourceDatabaseName.Size = new System.Drawing.Size(374, 22);
             this.tbMySqlDataSourceDatabaseName.TabIndex = 81;
             // 
             // tbMySqlDataSourceUserName
             // 
             this.tbMySqlDataSourceUserName.BackColor = System.Drawing.SystemColors.Window;
-            this.tbMySqlDataSourceUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMySqlDataSourceUserName.Location = new System.Drawing.Point(100, 88);
+            this.tbMySqlDataSourceUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.tbMySqlDataSourceUserName.Location = new System.Drawing.Point(117, 102);
             this.tbMySqlDataSourceUserName.Name = "tbMySqlDataSourceUserName";
-            this.tbMySqlDataSourceUserName.Size = new System.Drawing.Size(321, 22);
+            this.tbMySqlDataSourceUserName.Size = new System.Drawing.Size(374, 22);
             this.tbMySqlDataSourceUserName.TabIndex = 82;
             // 
             // tbMySqlDataSourcePassword
             // 
             this.tbMySqlDataSourcePassword.BackColor = System.Drawing.SystemColors.Window;
-            this.tbMySqlDataSourcePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMySqlDataSourcePassword.Location = new System.Drawing.Point(100, 122);
+            this.tbMySqlDataSourcePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.tbMySqlDataSourcePassword.Location = new System.Drawing.Point(117, 141);
             this.tbMySqlDataSourcePassword.Name = "tbMySqlDataSourcePassword";
             this.tbMySqlDataSourcePassword.PasswordChar = '*';
-            this.tbMySqlDataSourcePassword.Size = new System.Drawing.Size(321, 22);
+            this.tbMySqlDataSourcePassword.Size = new System.Drawing.Size(374, 22);
             this.tbMySqlDataSourcePassword.TabIndex = 83;
             // 
             // gbxMySqlDataSource
@@ -176,10 +176,10 @@
             this.gbxMySqlDataSource.Controls.Add(this.lblMySqlDatasourceStatusValue);
             this.gbxMySqlDataSource.Controls.Add(this.lilCheckMySqlDatasourceStatus);
             this.gbxMySqlDataSource.Controls.Add(this.lblMySqlDatasourceStatus);
-            this.gbxMySqlDataSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxMySqlDataSource.Location = new System.Drawing.Point(23, 128);
+            this.gbxMySqlDataSource.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.gbxMySqlDataSource.Location = new System.Drawing.Point(27, 148);
             this.gbxMySqlDataSource.Name = "gbxMySqlDataSource";
-            this.gbxMySqlDataSource.Size = new System.Drawing.Size(439, 239);
+            this.gbxMySqlDataSource.Size = new System.Drawing.Size(512, 276);
             this.gbxMySqlDataSource.TabIndex = 95;
             this.gbxMySqlDataSource.TabStop = false;
             this.gbxMySqlDataSource.Text = "MySQL Datasource";
@@ -187,19 +187,19 @@
             // tbMySqlDataSourcePort
             // 
             this.tbMySqlDataSourcePort.BackColor = System.Drawing.SystemColors.Window;
-            this.tbMySqlDataSourcePort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMySqlDataSourcePort.Location = new System.Drawing.Point(100, 159);
+            this.tbMySqlDataSourcePort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.tbMySqlDataSourcePort.Location = new System.Drawing.Point(117, 183);
             this.tbMySqlDataSourcePort.Name = "tbMySqlDataSourcePort";
-            this.tbMySqlDataSourcePort.Size = new System.Drawing.Size(321, 22);
+            this.tbMySqlDataSourcePort.Size = new System.Drawing.Size(374, 22);
             this.tbMySqlDataSourcePort.TabIndex = 84;
             // 
             // lblMySqlDataSourcePort
             // 
             this.lblMySqlDataSourcePort.AutoSize = true;
             this.lblMySqlDataSourcePort.BackColor = System.Drawing.Color.Transparent;
-            this.lblMySqlDataSourcePort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMySqlDataSourcePort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblMySqlDataSourcePort.ForeColor = System.Drawing.Color.Black;
-            this.lblMySqlDataSourcePort.Location = new System.Drawing.Point(18, 162);
+            this.lblMySqlDataSourcePort.Location = new System.Drawing.Point(21, 187);
             this.lblMySqlDataSourcePort.Name = "lblMySqlDataSourcePort";
             this.lblMySqlDataSourcePort.Size = new System.Drawing.Size(38, 16);
             this.lblMySqlDataSourcePort.TabIndex = 79;
@@ -209,9 +209,9 @@
             // 
             this.lblMySqlDataSourcePassword.AutoSize = true;
             this.lblMySqlDataSourcePassword.BackColor = System.Drawing.Color.Transparent;
-            this.lblMySqlDataSourcePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMySqlDataSourcePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblMySqlDataSourcePassword.ForeColor = System.Drawing.Color.Black;
-            this.lblMySqlDataSourcePassword.Location = new System.Drawing.Point(18, 125);
+            this.lblMySqlDataSourcePassword.Location = new System.Drawing.Point(21, 144);
             this.lblMySqlDataSourcePassword.Name = "lblMySqlDataSourcePassword";
             this.lblMySqlDataSourcePassword.Size = new System.Drawing.Size(74, 16);
             this.lblMySqlDataSourcePassword.TabIndex = 78;
@@ -221,9 +221,9 @@
             // 
             this.lblMySqlDataSourceUserName.AutoSize = true;
             this.lblMySqlDataSourceUserName.BackColor = System.Drawing.Color.Transparent;
-            this.lblMySqlDataSourceUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMySqlDataSourceUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblMySqlDataSourceUserName.ForeColor = System.Drawing.Color.Black;
-            this.lblMySqlDataSourceUserName.Location = new System.Drawing.Point(18, 91);
+            this.lblMySqlDataSourceUserName.Location = new System.Drawing.Point(21, 105);
             this.lblMySqlDataSourceUserName.Name = "lblMySqlDataSourceUserName";
             this.lblMySqlDataSourceUserName.Size = new System.Drawing.Size(80, 16);
             this.lblMySqlDataSourceUserName.TabIndex = 77;
@@ -233,9 +233,9 @@
             // 
             this.lblMySqlDataSourceHostName.AutoSize = true;
             this.lblMySqlDataSourceHostName.BackColor = System.Drawing.Color.Transparent;
-            this.lblMySqlDataSourceHostName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMySqlDataSourceHostName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblMySqlDataSourceHostName.ForeColor = System.Drawing.Color.Black;
-            this.lblMySqlDataSourceHostName.Location = new System.Drawing.Point(18, 26);
+            this.lblMySqlDataSourceHostName.Location = new System.Drawing.Point(21, 30);
             this.lblMySqlDataSourceHostName.Name = "lblMySqlDataSourceHostName";
             this.lblMySqlDataSourceHostName.Size = new System.Drawing.Size(42, 16);
             this.lblMySqlDataSourceHostName.TabIndex = 66;
@@ -245,9 +245,9 @@
             // 
             this.lblMySqlDataSourceDatabaseName.AutoSize = true;
             this.lblMySqlDataSourceDatabaseName.BackColor = System.Drawing.Color.Transparent;
-            this.lblMySqlDataSourceDatabaseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMySqlDataSourceDatabaseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblMySqlDataSourceDatabaseName.ForeColor = System.Drawing.Color.Black;
-            this.lblMySqlDataSourceDatabaseName.Location = new System.Drawing.Point(18, 58);
+            this.lblMySqlDataSourceDatabaseName.Location = new System.Drawing.Point(21, 67);
             this.lblMySqlDataSourceDatabaseName.Name = "lblMySqlDataSourceDatabaseName";
             this.lblMySqlDataSourceDatabaseName.Size = new System.Drawing.Size(74, 16);
             this.lblMySqlDataSourceDatabaseName.TabIndex = 76;
@@ -257,9 +257,9 @@
             // 
             this.lblMySqlDatasourceStatusValue.AutoSize = true;
             this.lblMySqlDatasourceStatusValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblMySqlDatasourceStatusValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMySqlDatasourceStatusValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblMySqlDatasourceStatusValue.ForeColor = System.Drawing.Color.Black;
-            this.lblMySqlDatasourceStatusValue.Location = new System.Drawing.Point(145, 199);
+            this.lblMySqlDatasourceStatusValue.Location = new System.Drawing.Point(169, 230);
             this.lblMySqlDatasourceStatusValue.Name = "lblMySqlDatasourceStatusValue";
             this.lblMySqlDatasourceStatusValue.Size = new System.Drawing.Size(134, 16);
             this.lblMySqlDatasourceStatusValue.TabIndex = 75;
@@ -268,8 +268,8 @@
             // lilCheckMySqlDatasourceStatus
             // 
             this.lilCheckMySqlDatasourceStatus.AutoSize = true;
-            this.lilCheckMySqlDatasourceStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lilCheckMySqlDatasourceStatus.Location = new System.Drawing.Point(97, 199);
+            this.lilCheckMySqlDatasourceStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lilCheckMySqlDatasourceStatus.Location = new System.Drawing.Point(113, 230);
             this.lilCheckMySqlDatasourceStatus.Name = "lilCheckMySqlDatasourceStatus";
             this.lilCheckMySqlDatasourceStatus.Size = new System.Drawing.Size(46, 16);
             this.lilCheckMySqlDatasourceStatus.TabIndex = 72;
@@ -281,9 +281,9 @@
             // 
             this.lblMySqlDatasourceStatus.AutoSize = true;
             this.lblMySqlDatasourceStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblMySqlDatasourceStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMySqlDatasourceStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblMySqlDatasourceStatus.ForeColor = System.Drawing.Color.Black;
-            this.lblMySqlDatasourceStatus.Location = new System.Drawing.Point(18, 199);
+            this.lblMySqlDatasourceStatus.Location = new System.Drawing.Point(21, 230);
             this.lblMySqlDatasourceStatus.Name = "lblMySqlDatasourceStatus";
             this.lblMySqlDatasourceStatus.Size = new System.Drawing.Size(51, 16);
             this.lblMySqlDatasourceStatus.TabIndex = 68;
@@ -292,10 +292,10 @@
             // btnSave
             // 
             this.btnSave.Enabled = false;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(387, 376);
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnSave.Location = new System.Drawing.Point(451, 434);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(87, 27);
             this.btnSave.TabIndex = 96;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -303,14 +303,14 @@
             // 
             // frmSetting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 411);
+            this.ClientSize = new System.Drawing.Size(565, 474);
             this.Controls.Add(this.gbxResultDataSource);
             this.Controls.Add(this.gbxMySqlDataSource);
             this.Controls.Add(this.btnSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "frmSetting";
+            this.Name = "FrmSetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Setting";
             this.gbxResultDataSource.ResumeLayout(false);
@@ -318,7 +318,6 @@
             this.gbxMySqlDataSource.ResumeLayout(false);
             this.gbxMySqlDataSource.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion

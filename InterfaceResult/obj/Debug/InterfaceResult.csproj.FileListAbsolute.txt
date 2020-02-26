@@ -31,3 +31,9 @@ C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\bin\Debug\InterfaceResult
 C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\bin\Debug\InterfaceResult.pdb
 C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\bin\Debug\MySql.Data.dll
 C:\Users\supaw\Desktop\interfaceResult\InterfaceResult\obj\Debug\InterfaceResult.csproj.CopyComplete
+C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\bin\Debug\InterfaceResult.exe.manifest
+C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\bin\Debug\InterfaceResult.application
+C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\obj\Debug\InterfaceResult.exe.manifest
+C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\obj\Debug\InterfaceResult.application
+C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\bin\Debug\Aspose.Cells.dll
+C:\Users\Administrator\Desktop\nextit\InterfaceResult\InterfaceResult\bin\Debug\Aspose.Cells.xml
